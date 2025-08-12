@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Esha Patel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esha Patel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hamburger-icon::before {
+      content: "☰";
+      font-size: 24px;
+    }
+    .cross-icon::before {
+      content: "✖";
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar header section -->
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo-heading">Esha Patel</h2>
+      <section class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" tabindex="0">
+        <section class="hamburger-icon"></section>
+        <section class="cross-icon hidden"></section>
+      </section>
+      <ul class="menu-list">
+        <li><a class="links" href="#about">About</a></li>
+        <li><a class="links" href="#portfolio">Portfolio</a></li>
+        <li><a class="links" href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section-box about-page">
+      <header class="headings">
+        <h3 class="greet-heading">Hello, I'm</h3>
+        <h1 class="my-heading">Esha Patel</h1>
+        <h4 class="sub-heading"> Marketing Manager and Junior Graphic Designer</h4>
+      </header>
+
+      <section class="about-content">
+        <section class="about-text">
+          <h1 class="my-heading">About Me</h1>
+          <p class="lead-para">
+            Hi, I'm Esha, a enthusiastic graphic designer with a Post‑Grad Diploma in Graphic Design for Print & Web and hands‑on marketing experience. Proficient in Adobe Creative Suite, motion graphics, video editing, and social media asset creation. Adept at translating marketing objectives into cohesive visual campaigns under tight deadlines.
+          </p>
+          <p>I am a passionate and creative individual with a background in fashion communication and a keen interest in graphic design. I enjoy blending artistic vision with functional design to create meaningful visual experiences. My journey has led me to explore various aspects of content creation, customer service, and marketing, enriching my skills and broadening my perspective.</p>
+          <p>
+            My professional experiences include working in diverse roles such as retail sales, IT sales and recruitment, events, marketing, and social media management. I have developed strong communication skills and a customer-first mindset. Currently, I am expanding my technical expertise in web design and development, aiming to merge creativity with technology. In my free time, I enjoy exploring new design trends and honing my digital illustration skills.
+          </p>
+        </section>
+        <picture class="about-image">
+          <img src="About.png" alt="" />
+        </picture>
+      </section>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-box portfolio">
+      <h1 class="my-heading text-center">Featured Portfolio</h1>
+
+      <section class="portfolio-content">
+        <section class="my-row">
+          <section class="my-card port-card">
+            <picture>
+              <img src="Esha Patel - Assignment _3 PopCan Design-02.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text">PopCan Design</h3>
+            <p class="small-para highlight-text">Designed a pop can from scratch in Adobe Illustrator</p>
+          </section>
+
+          <section class="my-card port-card">
+            <picture>
+              <img src="european-style-door-building-doors.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text">Water kettle - Technical Drawing</h3>
+            <p class="small-para highlight-text">Creating detailed technical drawing To make a detailed electric water kettle from scratch using Adobe Illustrator</p>
+          </section>
+
+          <section class="my-card port-card">
+            <picture>
+              <img src="11670075.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text"> Fitness Magazine</h3>
+            <p class="small-para highlight-text">Fitness magazine designed in Adobe Indesign Scan the QR code to see the whole magazine</p>
+          </section>
+        </section>
+
+        <section class="my-row">
+          <section class="my-card port-card">
+            <picture>
+              <img src="Interactive Game.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text">Interactive Game</h3>
+            <p class="small-para highlight-text"> Made a simple interactive game for kids in Adobe XD. Scan the QR code to play the game.</p>
+          </section>
+
+          <section class="my-card port-card">
+            <picture>
+              <img src="Esha Patel Assignment1 Vector Portrait-01.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text"> Self Portrait</h3>
+            <p class="small-para highlight-text"> Made a self portrait using Adobe Illustrator.</p>
+          </section>
+
+          <section class="my-card port-card">
+            <picture>
+              <img src="Personal Branding.png" alt="" />
+            </picture>
+            <h3 class="greet-heading highlight-text">Personal Branding</h3>
+            <p class="small-para highlight-text"> Made a personal branding kit using Adobe Illustrator. Made logo, cover letter, and resume for myself.</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Contact me section -->
+    <section id="contact" class="section-box contact">
+      <h1 class="my-heading text-center">Contact Me</h1>
+      <section class="contact-content">
+
+        <form class="contact-form" onsubmit="return handleSubmit(event)">
+          <h1 class="greet-heading">Get In Touch</h1>
+          <input class="form-controls" type="text" placeholder="Your Name" required />
+          <input class="form-controls" type="email" placeholder="Your Email" required />
+          <input class="form-controls" type="tel" placeholder="Your Phone" />
+          <textarea class="form-controls" placeholder="Write your message" cols="30" rows="10" required></textarea>
+          <input class="form-btn btn common-btn" type="submit" value="Send Message" />
+        </form>
+
+        <address class="contact-details">
+          <h1 class="greet-heading">My Contact Details</h1>
+          <section class="details">
+            <h5 class="contact-heading">EMAIL</h5>
+            <p class="contact-text">esha08924@gmail.com</p>
+          </section>
+          <section class="details">
+            <h5 class="contact-heading">PHONE</h5>
+            <p class="contact-text">+1 234 567 890</p>
+          </section>
+          <section class="details">
+            <h5 class="contact-heading">ADDRESS</h5>
+            <p class="contact-text">Toronto, CA</p>
+            <p>123 Lower Street</p>
+            <p>Toronto, 94105</p>
+          </section>
+        </address>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="script.js"></script>
+</body>
